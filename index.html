@@ -1,0 +1,169 @@
+
+<html>
+ <head>
+  <title>
+   Create Your Account
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff;
+        }
+        .container {
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 100px;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .subtext {
+            margin-bottom: 20px;
+        }
+        .subtext a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .subtext a:hover {
+            text-decoration: underline;
+        }
+        .google-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .google-btn img {
+            width: 20px;
+            margin-right: 10px;
+        }
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .divider::before, .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #ddd;
+        }
+        .divider:not(:empty)::before {
+            margin-right: .25em;
+        }
+        .divider:not(:empty)::after {
+            margin-left: .25em;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .submit-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        .footer-text {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+        .footer-text a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="logo">
+    <img alt="bitly logo" height="50" src="https://storage.googleapis.com/a1aa/image/m1SDcshYhhboHJeLGp4wr5Jf2Poj3NpuwAlK8NHYf2Pe81JQB.jpg" width="100"/>
+   </div>
+   <h1>
+    Create your account
+   </h1>
+   <div class="subtext">
+    Already have an account?
+    <a href="#login">
+     Log in
+    </a>
+    or
+    <a href="#sso">
+     Log in with SSO
+    </a>
+   </div>
+   <div class="google-btn">
+    <img alt="Google logo" height="20" src="https://storage.googleapis.com/a1aa/image/qsRSceeRBliK9EjHZGBhL0EeqFF94abI5h7lYALhwJNae1JQB.jpg" width="20"/>
+    <span>
+     Continue with Google
+    </span>
+   </div>
+   <div class="divider">
+    OR
+   </div>
+   <form action="/create-account" method="POST">
+    <div class="form-group">
+     <input name="email" placeholder="Email" type="email" required />
+    </div>
+    <div class="form-group">
+     <input name="password" placeholder="Password" type="password" required />
+    </div>
+    <button class="submit-btn" type="submit">
+     Create free account
+    </button>
+   </form>
+   <div class="footer-text">
+    By creating an account, you agree to Bitly's
+    <a href="#terms">
+     Terms of Service
+    </a>
+    ,
+    <a href="#privacy">
+     Privacy Policy
+    </a>
+    and
+    <a href="#acceptable-use">
+     Acceptable Use Policy
+    </a>
+    .
+   </div>
+  </div>
+ </body>
+</html>
+
