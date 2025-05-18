@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const mongo = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/link-sortner", {
+    await mongoose.connect(URI , {
       useNewUrlParser: true,  // To handle URL parsing deprecation
       useUnifiedTopology: true,  // To handle server discovery deprecation
     });
