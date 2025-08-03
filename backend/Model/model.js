@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-const shortid = require("shortid")
+const shortid = require("shortid")// this may not good 
 
 const schema = mongoose.Schema({
     shortid : {
